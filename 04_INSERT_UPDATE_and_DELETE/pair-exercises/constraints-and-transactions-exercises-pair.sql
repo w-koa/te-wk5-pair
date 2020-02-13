@@ -77,6 +77,6 @@ WHERE language = 'French' AND percentage > 20;
 
 
 UPDATE country
-SET surfacearea = surfacearea * 1609.34
+SET surfacearea = surfacearea * 2589988.1103
 WHERE country.code IN (SELECT countrylanguage.countrycode FROM countrylanguage WHERE countrylanguage.percentage > 20 AND language = 'French');
 ROLLBACK;
